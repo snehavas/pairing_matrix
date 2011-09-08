@@ -11,4 +11,17 @@
 
 ActiveRecord::Schema.define(:version => 0) do
 
+  create_table "groups", :force => true do |t|
+    t.integer :pair_id
+    t.integer :user_id
+  end
+
+  create_table "pairs", :force => true do |t|
+    t.integer "count"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string "name"
+  end
+
 end
