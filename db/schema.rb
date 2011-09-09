@@ -9,11 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110914020446) do
 
-  create_table "groups", :force => true do |t|
-    t.integer :pair_id
-    t.integer :user_id
+  create_table "pairers", :force => true do |t|
+    t.integer "pair_id"
+    t.integer "user_id"
   end
 
   create_table "pairs", :force => true do |t|
